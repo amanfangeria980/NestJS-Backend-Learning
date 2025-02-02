@@ -3,7 +3,6 @@ import { Injectable } from '@nestjs/common';
 export interface Song {
   title: string;
   artist: string;
-  // add other properties as needed
 }
 
 @Injectable()
