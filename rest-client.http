@@ -1,0 +1,16 @@
+GET http://localhost:3005/
+
+### Send fetch all songs request
+GET http://localhost:3005/songs/
+
+### Send fetch a song request
+GET http://localhost:3005/songs/1
+
+### Send create a song request
+POST http://localhost:3005/songs/
+
+### Send update a song request
+PUT http://localhost:3005/songs/1
+
+### Send delete a song request
+DELETE http://localhost:3005/songs/1
