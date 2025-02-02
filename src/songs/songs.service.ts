@@ -1,15 +1,11 @@
 import { Injectable } from '@nestjs/common';
-
-export interface Song {
-  title: string;
-  artist: string;
-}
+import { CreateSongDto } from './dto/create-song.dto';
 
 @Injectable()
 export class SongsService {
-  private readonly songs: Song[] = [];
+  private readonly songs: CreateSongDto[] = [];
 
-  create(song: Song) {
+  create(song: CreateSongDto) {
     // save the song to db
     this.songs.push(song);
     return this.songs;

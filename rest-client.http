@@ -8,6 +8,14 @@ GET http://localhost:3005/songs/1
 
 ### Send create a song request
 POST http://localhost:3005/songs/
+Content-Type: application/json
+
+{
+   "title": "Animals",
+  "artists": ["Martin Garrix"],
+  "releaseDate": "2013-06-01",
+  "duration": "02:15"
+}
 
 ### Send update a song request
 PUT http://localhost:3005/songs/1
